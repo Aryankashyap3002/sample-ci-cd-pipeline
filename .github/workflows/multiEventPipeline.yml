@@ -5,12 +5,20 @@ on:
         branches:
             - master
             - test
+    pull_request:
+        branches:
+            - master
 
 jobs:
     on-push:
         runs-on: ubuntu-latest
         steps:
-            - name: "Running on master branch"
-              run: echo "Running on master branch"
+            - name: "Running on master/test branch"
+              run: echo "Running on master/test branch"
             - name: "Print date"
               run: date
+    on-pull-request:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Running pull request"
+              run: echo "Running pull request"
