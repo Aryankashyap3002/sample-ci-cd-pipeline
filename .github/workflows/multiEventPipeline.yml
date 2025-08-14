@@ -12,3 +12,5 @@ jobs:
         steps:
             - name: "Running on master branch"
               run: echo "Running on master branch"
+            - name: "Print date"
+              run: date
