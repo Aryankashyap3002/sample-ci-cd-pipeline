@@ -30,4 +30,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "Working on workflow dispatch pipeline"
-              run: echo "Working on workflow dispatch pipeline"
+              run: echo "Working on workflow dispatch pipeline/workflow"
